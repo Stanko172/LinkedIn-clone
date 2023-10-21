@@ -19,6 +19,8 @@
 		837D21482AE3CBAD009E8361 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837D21472AE3CBAD009E8361 /* PostView.swift */; };
 		837D214A2AE3CBC2009E8361 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837D21492AE3CBC2009E8361 /* NotificationsView.swift */; };
 		837D214C2AE3CBCF009E8361 /* JobsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837D214B2AE3CBCF009E8361 /* JobsView.swift */; };
+		837D21502AE3DFA7009E8361 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837D214F2AE3DFA7009E8361 /* Post.swift */; };
+		837D21522AE3E6F7009E8361 /* PostHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837D21512AE3E6F7009E8361 /* PostHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		837D21472AE3CBAD009E8361 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		837D21492AE3CBC2009E8361 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
 		837D214B2AE3CBCF009E8361 /* JobsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsView.swift; sourceTree = "<group>"; };
+		837D214F2AE3DFA7009E8361 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		837D21512AE3E6F7009E8361 /* PostHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,7 @@
 		837D21162AE3C802009E8361 /* LinkedIn clone */ = {
 			isa = PBXGroup;
 			children = (
+				837D214D2AE3DF7A009E8361 /* Features */,
 				837D21412AE3CB3C009E8361 /* Views */,
 				837D21172AE3C802009E8361 /* LinkedIn_cloneApp.swift */,
 				837D21192AE3C802009E8361 /* ContentView.swift */,
@@ -148,6 +153,23 @@
 				837D214B2AE3CBCF009E8361 /* JobsView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		837D214D2AE3DF7A009E8361 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				837D214E2AE3DF82009E8361 /* Post */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		837D214E2AE3DF82009E8361 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				837D214F2AE3DFA7009E8361 /* Post.swift */,
+				837D21512AE3E6F7009E8361 /* PostHeader.swift */,
+			);
+			path = Post;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,7 +305,9 @@
 				837D21432AE3CB86009E8361 /* HomeView.swift in Sources */,
 				837D21452AE3CB95009E8361 /* NetworkView.swift in Sources */,
 				837D214C2AE3CBCF009E8361 /* JobsView.swift in Sources */,
+				837D21502AE3DFA7009E8361 /* Post.swift in Sources */,
 				837D211A2AE3C802009E8361 /* ContentView.swift in Sources */,
+				837D21522AE3E6F7009E8361 /* PostHeader.swift in Sources */,
 				837D21482AE3CBAD009E8361 /* PostView.swift in Sources */,
 				837D21182AE3C802009E8361 /* LinkedIn_cloneApp.swift in Sources */,
 				837D214A2AE3CBC2009E8361 /* NotificationsView.swift in Sources */,
