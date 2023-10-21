@@ -9,7 +9,17 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        Post()
+        
+        List{
+            Post().listRowInsets(EdgeInsets()).listRowSeparator(.hidden)
+            Post().listRowInsets(EdgeInsets()).listRowSeparator(.hidden)
+            Post().listRowInsets(EdgeInsets()).listRowSeparator(.hidden)
+        }
+        .listStyle(.plain)
+        .listRowSpacing(12)
+        .background(Color.gray.opacity(0.2))
+        
+        
     }
 }
 

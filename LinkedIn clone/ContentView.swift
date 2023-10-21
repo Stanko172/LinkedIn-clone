@@ -30,7 +30,7 @@ struct ContentView: View {
                 .tabItem {
                     Label("Jobs", systemImage: "briefcase.fill")
                 }
-        }
+        }.background(Color.red)
         .tint(Color.black.opacity(0.9))
     }
 }

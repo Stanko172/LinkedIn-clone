@@ -11,7 +11,9 @@ struct Post: View {
     var body: some View {
         VStack{
             PostHeader()
-        }
+            PostBody()
+            PostFooter()
+        }.background(Color.white)
     }
 }
 
