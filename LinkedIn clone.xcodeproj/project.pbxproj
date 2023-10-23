@@ -23,6 +23,7 @@
 		837D214C2AE3CBCF009E8361 /* JobsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837D214B2AE3CBCF009E8361 /* JobsView.swift */; };
 		837D21502AE3DFA7009E8361 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837D214F2AE3DFA7009E8361 /* Post.swift */; };
 		837D21522AE3E6F7009E8361 /* PostHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837D21512AE3E6F7009E8361 /* PostHeader.swift */; };
+		83C90B9F2AE6EEF700D5F2FA /* PostComments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C90B9E2AE6EEF700D5F2FA /* PostComments.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		837D214B2AE3CBCF009E8361 /* JobsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsView.swift; sourceTree = "<group>"; };
 		837D214F2AE3DFA7009E8361 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		837D21512AE3E6F7009E8361 /* PostHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostHeader.swift; sourceTree = "<group>"; };
+		83C90B9E2AE6EEF700D5F2FA /* PostComments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostComments.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +176,7 @@
 				837D21512AE3E6F7009E8361 /* PostHeader.swift */,
 				4ECCE6E82AE3E7EA00D4A50C /* PostBody.swift */,
 				4ECCE6EA2AE3E7F100D4A50C /* PostFooter.swift */,
+				83C90B9E2AE6EEF700D5F2FA /* PostComments.swift */,
 			);
 			path = Post;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4ECCE6EB2AE3E7F100D4A50C /* PostFooter.swift in Sources */,
+				83C90B9F2AE6EEF700D5F2FA /* PostComments.swift in Sources */,
 				837D21432AE3CB86009E8361 /* HomeView.swift in Sources */,
 				837D21452AE3CB95009E8361 /* NetworkView.swift in Sources */,
 				837D214C2AE3CBCF009E8361 /* JobsView.swift in Sources */,
