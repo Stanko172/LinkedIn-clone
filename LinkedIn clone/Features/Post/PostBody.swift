@@ -8,18 +8,20 @@
 import SwiftUI
 
 struct PostBody: View {
+    var description:String
+    var picture:String
     var body: some View {
-        VStack(alignment:.trailing){
-            Text("Happy 9th birthday to the freeCodeCamp Community!")
-                .frame(maxWidth:.infinity,alignment: .leading)
+        VStack(){
+            Text(description)
                 .padding()
                 .font(.system(size:14))
                 .fontWeight(.medium)
-            Image("post").resizable().aspectRatio(contentMode: .fit)
+                
+            Image(picture).resizable().aspectRatio(contentMode: .fill)
         }
     }
 }
 
 #Preview {
-    PostBody()
+    PostBody(description: "Preview description", picture: "post")
 }

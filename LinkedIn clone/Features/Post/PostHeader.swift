@@ -8,20 +8,22 @@
 import SwiftUI
 
 struct PostHeader: View {
+    var user:User;
+    var time:String;
     var body: some View {
         HStack {
-            Image("profile")
+            Image(user.avatar)
                 .resizable()
                 .frame(width: 40, height: 40)
                 .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
             VStack(alignment: .leading) {
-                Text("freeCodeCamp")
+                Text(user.name)
                     .fontWeight(.semibold)
-                Text("1,234,324 followers")
+                Text(user.description)
                     .font(.caption)
                     .foregroundColor(Color.gray)
                 HStack {
-                    Text("21h")
+                    Text(time)
                         .font(.caption)
                         .foregroundColor(Color.gray)
                 }
@@ -36,5 +38,5 @@ struct PostHeader: View {
 }
 
 #Preview {
-    PostHeader()
+    PostHeader(user:ModelData().posts[0].user,time: ModelData().posts[0].timePosted)
 }

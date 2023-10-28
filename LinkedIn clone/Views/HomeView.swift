@@ -8,13 +8,14 @@
 import SwiftUI
 
 struct HomeView: View {
+    var posts = ModelData().posts
     var body: some View {
         NavigationStack {
             Spacer()
             ScrollView{
-                Post().listRowInsets(EdgeInsets()).listRowSeparator(.hidden)
-                Post().listRowInsets(EdgeInsets()).listRowSeparator(.hidden)
-                Post().listRowInsets(EdgeInsets()).listRowSeparator(.hidden)
+                ForEach(posts) { post in
+                    Post(post: post)
+                }
             }
             .listStyle(.plain)
             .listRowSpacing(12)

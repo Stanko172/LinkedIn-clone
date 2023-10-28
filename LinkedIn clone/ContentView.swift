@@ -32,7 +32,7 @@ struct ContentView: View {
                         Label("Jobs", systemImage: "briefcase.fill")
                     }
             }
-            .tint(Color.black.opacity(0.9))
+            
         
     }
 }

@@ -8,15 +8,24 @@
 import SwiftUI
 
 struct Post: View {
+    var post: PostModel
     var body: some View {
         VStack{
-            PostHeader()
-            PostBody()
-            PostFooter()
+            PostHeader(user:post.user,time:post.timePosted)
+            PostBody(
+                description: "Testing description",
+                picture:post.picture
+            )
+            PostFooter(
+                id: post.id,
+                reactionNumber:post.reactionNumber,
+                commentNumber:post.commentNumber,
+                repostNumber:post.repostNumber
+            )
         }.background(Color.white)
     }
 }
 
 #Preview {
-    Post()
+    Post(post: ModelData().posts[0])
 }

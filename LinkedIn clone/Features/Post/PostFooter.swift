@@ -14,7 +14,13 @@ struct NoChevronLinkStyle: ButtonStyle {
 }
 
 struct PostFooter: View {
+    var id: String
+    var reactionNumber: Int
+    var commentNumber: Int
+    var repostNumber: Int
+    
     @State private var showAlert = false
+    
     var body: some View {
         NavigationStack {
             VStack{
@@ -24,10 +30,10 @@ struct PostFooter: View {
                         .foregroundColor(.white)
                         .frame(width: 16,height: 16)
                         .background(Circle().fill(Color.blue))
-                    Text("8,899")
+                    Text(String(reactionNumber))
                     Spacer()
-                    Text("261 comments  •")
-                    Text("179 reposts")
+                    Text("\(String(commentNumber)) comments  •")
+                    Text("\(String(repostNumber)) reposts")
                     
                 }
                 .foregroundStyle(Color.gray)
@@ -45,13 +51,14 @@ struct PostFooter: View {
                     }
                     Spacer()
                     NavigationLink{
-                        PostComments()
+                        PostComments(id:id)
                     } label: {
                         VStack{
                             Image(systemName:"ellipsis.message")
                             Text("Comments")
                         }
                     }
+                    .navigationTitle("")
                     Spacer()
                     VStack{
                         Image(systemName:"arrow.triangle.2.circlepath")
@@ -77,5 +84,9 @@ struct PostFooter: View {
 }
 
 #Preview {
-    PostFooter()
+    PostFooter(id: "1",reactionNumber: 10, commentNumber: 10, repostNumber: 10)
+}
+
+#Preview {
+    ContentView()
 }
